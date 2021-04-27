@@ -40,6 +40,14 @@ export default {
 }
 </script>
 <style>
+.dsw-main-container {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: #202020;
+}
+.dsw-bg-image-container {
+  background-size: cover;
+  background-position: center;
+}
 *:focus {
   outline: 0 !important;
 }
@@ -49,49 +57,26 @@ p {
 img {
   width:100%;
 }
+.dsw-line-sm {
+  line-height: 32px !important;
+}
 .dsw-line-xl {
   line-height: 72px;
 }
 .dsw-line-lg {
   line-height: 62px;
 }
-.dsw-feature-buttons button {
-  border-radius: 2px;
-  min-width:250px;
-  font-weight: 900;
-}
-.dsw-feature-buttons button.active {
-  border: 3px solid #293896;
-  background-color: #293B96;
-  border-radius: 2px;
-  color: #fff;
-  font-weight: 900;
-}
-.dsw-line-sm {
-  line-height: 32px !important;
-}
-.dsw-main-container {
-  font-family: Lato, Arial, Helvetica, sans-serif;
-  color: #202020;
+.dsw-text-44xl {
+  line-height: 52px;
 }
 .dsw-flex-col-3 {
   flex-grow: 0;
   flex-basis: 100%;
-}
-.dsw-text-44xl {
-  line-height: 52px;
 }
 @media only screen and (min-width: 1024px) {
   .dsw-flex-col-3 {
     flex-grow: 0;
     flex-basis: 30%;
   }
-}
-.dsw-bg-image-container {
-  background-size: cover;
-  background-position: center;
-}
-.dsw-jc-mh {
-  justify-content: center;
 }
 </style>

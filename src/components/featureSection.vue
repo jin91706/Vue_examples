@@ -54,3 +54,10 @@ export default {
   }
 }
 </script>
+<style scoped>
+.dsw-feature-buttons button {
+  border-radius: 2px;
+  min-width:250px;
+  font-weight: 900;
+}
+</style>
