@@ -3,7 +3,7 @@
     <div class="dsw-mx-auto dsw-px-2">
       <h1 class="dsw-text-2xl dsw-text-center dsw-my-6 dsw-line-lg">View Our Models</h1>
       <div class="dsw-mx-auto dsw-flex dsw-text-sm dsw-flex-wrap dsw-container dsw-w-full">
-        <div v-for="(tub, index) in tub_array" class="dsw-text-center dsw-mx-auto dsw-flex-col-3" :key="index">
+        <div v-for="(tub, index) in tubs.products" class="dsw-text-center dsw-mx-auto dsw-flex-col-3" :key="index">
           <img src="/img/spa1.png">
           <p class="dsw-mt-6 dsw-font-semibold dsw-text-22xl" v-html="tub.name"></p>
           <p class="dsw-line-sm">{{ tub.seats }} | {{ tub.jets }}</p>
@@ -20,17 +20,12 @@ export default {
   name: 'View Models',
   data() {
     return {
-      primaryLink: null,
-      tub_array: null
+      primaryLink: {
+        color: this.tubs.settings.links
+      }
     }
   },
   mounted() {
-    if (this.tubs) {
-      this.primaryLink = {
-        color: this.tubs[0].settings.links
-      };
-      this.tub_array = this.tubs[1];
-    }
   },
   computed: {
     

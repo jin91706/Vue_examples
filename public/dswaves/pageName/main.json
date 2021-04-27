@@ -21,7 +21,8 @@
       "/img/carousel/little_thumb.png",
       "/img/carousel/little_thumb.png",
       "/img/carousel/little_thumb.png"
-    ]
+    ],
+    "primary_color": "#293B96"
   },
   "reviewSection": { 
     "large": [
@@ -32,29 +33,30 @@
     ],
     "primary_color": "#293B96"
   },
-  "viewModelsSection": [
-    { "settings" : {
+  "viewModelsSection": { 
+    "settings" : {
       "links": "#293B96"
-    }},
-    [{
-      "name": "Monterey<span>&trade;</span> Premier",
-      "seats": "7 Seats Spa",
-      "jets": "22 Jets",
-      "dimensions": "6'5\" x 7'3\" x 34\""
     },
-    {
-      "name": "Excursion<span>&#174;</span> Premier",
-      "seats": "5 Seats Spa",
-      "jets": "25 Jets",
-      "dimensions": "6'5\" x 7'2\" x 33\""
+    "products": [{
+          "name": "Monterey<span>&trade;</span> Premier",
+          "seats": "7 Seats Spa",
+          "jets": "22 Jets",
+          "dimensions": "6'5\" x 7'3\" x 34\""
+        },
+        {
+          "name": "Excursion<span>&#174;</span> Premier",
+          "seats": "5 Seats Spa",
+          "jets": "25 Jets",
+          "dimensions": "6'5\" x 7'2\" x 33\""
+        },
+        {
+          "name": "Azure<span>&trade;</span> Premier",
+          "seats": "4 Seats Spa",
+          "jets": "19 Jets",
+          "dimensions": "5'3\" x 6'8\" x 33\""
+        }
+      ]
     },
-    {
-      "name": "Azure<span>&trade;</span> Premier",
-      "seats": "4 Seats Spa",
-      "jets": "19 Jets",
-      "dimensions": "5'3\" x 6'8\" x 33\""
-    }]
-  ],
   "featureSection": [
     {
       "title": "Portable Hot Tubs You’ll Love",

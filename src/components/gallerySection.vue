@@ -33,11 +33,13 @@ export default {
     }
   },
   mounted() {
-    const buttons = document.getElementsByClassName('carousel__pagination-button');
-    for(var i = 0; i < buttons.length; i++) {
-      buttons[i].style.background="url('" + this.gallery.thumb[i] + "')";
+    const buttons = this.$el.getElementsByClassName('carousel__pagination-button');
+    if (buttons) {
+      for(var i = 0; i < buttons.length; i++) {
+        buttons[i].style.background="url('" + this.gallery.thumb[i] + "')";
+      }
     }
-    document.documentElement.style.setProperty('--carousel-color-primary', 'orange');
+    document.documentElement.style.setProperty('--carousel-color-primary', '' + this.gallery.primary_color + '');
   },
   computed: {
   },
