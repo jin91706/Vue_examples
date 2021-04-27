@@ -4,7 +4,7 @@
   <gallerySection v-if="pageInfo" :gallery="pageInfo[0].gallerySection"/>
   <viewModelsSection v-if="pageInfo" :tubs="pageInfo[0].viewModelsSection"/>
   <featureSection v-if="pageInfo" :features="pageInfo[0].featureSection"/>
-  <reviewSection/>
+  <reviewSection v-if="pageInfo" :reviews="pageInfo[0].reviewSection"/>
   <bottomSection v-if="pageInfo" :bottom="pageInfo[0].bottomSection"/>
 </div>
 </template>

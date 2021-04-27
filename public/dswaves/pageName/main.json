@@ -12,16 +12,25 @@
   "gallerySection": { 
     "large": [
       "/img/carousel/carousel_lg/FELIB.png",
-      "/img/carousel/carousel_lg/man_lg.png",
-      "/img/carousel/carousel_lg/people_lg.png",
-      "/img/carousel/carousel_lg/spa_lg.png"
+      "/img/carousel/carousel_lg/FELIB.png",
+      "/img/carousel/carousel_lg/FELIB.png",
+      "/img/carousel/carousel_lg/FELIB.png"
     ],
     "thumb": [
       "/img/carousel/little_thumb.png",
-      "/img/carousel/little_man.png",
-      "/img/carousel/little_people.png",
-      "/img/carousel/little_spa.png"
+      "/img/carousel/little_thumb.png",
+      "/img/carousel/little_thumb.png",
+      "/img/carousel/little_thumb.png"
     ]
+  },
+  "reviewSection": { 
+    "large": [
+      "/img/carousel/carousel_lg/review.png",
+      "/img/carousel/carousel_lg/review.png",
+      "/img/carousel/carousel_lg/review.png",
+      "/img/carousel/carousel_lg/review.png"
+    ],
+    "primary_color": "#293B96"
   },
   "viewModelsSection": [
     { "settings" : {

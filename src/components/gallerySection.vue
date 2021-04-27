@@ -1,5 +1,5 @@
 <template>
-<div class="dsw-container dsw-px-4 dsw-pt-24 dsw-pb-28">
+<div class="dsw-container dsw-gallery dsw-px-4 dsw-pt-24 dsw-pb-28">
   <h1 class="dsw-text-2xl dsw-text-center dsw-my-6 dsw-pb-8 dsw-line-lg">Gallery</h1>
   <Carousel :settings="settings">
     <Slide v-for="(image, index) in gallery.large" :key="index">
@@ -40,17 +40,13 @@ export default {
     document.documentElement.style.setProperty('--carousel-color-primary', 'orange');
   },
   computed: {
-    
   },
   methods: {
-      onInitCarousel() {
-        console.log('our carousel is ready')
-      },
-    }
+  }
 }
 </script>
 <style>
-.carousel__pagination-button--active {
+.dsw-gallery .carousel__pagination-button--active {
   border: 3px solid var(--carousel-color-primary) !important;
 }
 .dsw-container {
@@ -61,7 +57,7 @@ export default {
     text-align: center;
     box-sizing: border-box;
 }
-.carousel__pagination {
+.dsw-gallery .carousel__pagination {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -81,25 +77,32 @@ export default {
 .carousel__prev,
 .carousel__next {
   box-sizing: content-box;
-  border: 1px solid white;
-  top: 45% !important;
+  border: 1px solid #fff;
+  top: 40% !important;
   background-color: unset;
   width: 40px;
   height: 40px;
 }
-.carousel__next {
+.dsw-gallery .carousel__next {
     right: 50px;
 }
-.carousel__prev {
+.dsw-gallery .carousel__prev {
     left: 50px;
 }
-.carousel__pagination-button {
-    margin: 10px;
-    width: 150px !important;
-    height: 75px;
+.dsw-gallery .carousel__pagination-button {
+    margin: 5px;
+    width: 100px;
+    height: 50px;
     border: 0;
     cursor: pointer;
     background-color: #fff;
     background-size: contain !important;
+}
+@media only screen and (min-width: 1024px) {
+  .dsw-gallery .carousel__pagination-button {
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+  }
 }
 </style>
