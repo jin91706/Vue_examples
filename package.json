@@ -1,0 +1,25 @@
+{
+  "name": "mpd2-vue-template",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue": "^3.0.4",
+    "vue-aos": "^1.1.0",
+    "vue-axios": "^3.2.2",
+    "vue-router": "^4.0.3",
+    "vue3-carousel": "^0.1.17"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@vue/compiler-sfc": "^3.0.4",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "rollup-plugin-scss": "^2.6.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vite": "^1.0.0-rc.13"
+  }
+}
