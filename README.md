@@ -18,3 +18,9 @@ npm run dev
 ```
 npm run build
 ```
+### Alternatively. Run using Docker
+```
+// This command runs 'npm install & npm run dev'
+docker-compose up -d
+// -d option is for detached mode
+```
