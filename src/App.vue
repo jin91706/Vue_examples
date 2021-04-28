@@ -15,6 +15,7 @@ import viewModelsSection from './components/viewModelsSection.vue';
 import featureSection from './components/featureSection.vue';
 import reviewSection from './components/reviewSection.vue';
 import bottomSection from './components/bottomSection.vue';
+import formSection from './components/formSection.vue';
 import axios from 'axios'
 export default {
   name: 'App',
@@ -24,7 +25,8 @@ export default {
     viewModelsSection,
     featureSection,
     reviewSection,
-    bottomSection
+    bottomSection,
+    formSection
   },
   data() {
    return {

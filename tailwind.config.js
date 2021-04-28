@@ -19,7 +19,9 @@ module.exports = {
       '3xl': '3.75rem',
       '44xl': '2.75rem',
       '22xl': '1.375rem',
-      '26xl': '1.625rem'
+      '26xl': '1.625rem',
+      '28xl': '1.75rem',
+      'xs': '1rem'
     },
     extend: {
       colors: {
