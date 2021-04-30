@@ -48,13 +48,17 @@ export default {
 }
 </script>
 <style>
+.dsw-gallery .carousel__item img {
+  min-height: 275px;
+  object-fit: cover;
+}
 .dsw-gallery .carousel__pagination-button--active {
   border: 3px solid var(--carousel-color-primary) !important;
 }
 .dsw-container {
   margin: 0 auto;
 }
-.carousel {
+.dsw-gallery .carousel {
     position: relative;
     text-align: center;
     box-sizing: border-box;
@@ -65,7 +69,7 @@ export default {
     list-style: none;
     margin-top: 10px;
 }
-.carousel__item {
+.dsw-gallery .carousel__item {
   min-height: 250px;
   width: 100%;
   background-color: #fff;
@@ -76,14 +80,15 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.carousel__prev,
-.carousel__next {
+.dsw-gallery .carousel__prev,
+.dsw-gallery .carousel__next {
   box-sizing: content-box;
   border: 1px solid #fff;
   top: 40% !important;
   background-color: unset;
   width: 40px;
   height: 40px;
+  display: none;
 }
 .dsw-gallery .carousel__next {
     right: 50px;
@@ -91,20 +96,46 @@ export default {
 .dsw-gallery .carousel__prev {
     left: 50px;
 }
+.dsw-gallery .carousel__pagination-item {
+  width: 100%;
+  padding: 0 5px;
+}
+.dsw-gallery .carousel__pagination-item:last-of-type {
+  padding-right: 0;
+}
+.dsw-gallery .carousel__pagination-item:first-of-type {
+  padding-left: 0;
+}
 .dsw-gallery .carousel__pagination-button {
-    margin: 5px;
-    width: 100px;
-    height: 50px;
+    margin: 0;
+    width: 100%;
+    height: 75px;
     border: 0;
     cursor: pointer;
     background-color: #fff;
-    background-size: contain !important;
+    background-size: cover !important;
+}
+@media only screen and (min-width: 640px) {
+  .dsw-gallery .carousel__prev,
+  .dsw-gallery .carousel__next {
+    display: flex;
+  }
+  .dsw-gallery .carousel__pagination-item {
+    width: 165px;
+    padding: 0;
+  }
+  .dsw-gallery .carousel__pagination-button {
+    width: 135px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .dsw-gallery .carousel__pagination-button {
     width: 150px;
     height: 75px;
     margin: 10px;
+  }
+  .dsw-gallery .carousel__pagination {
+    margin-top: 0;
   }
 }
 </style>

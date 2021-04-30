@@ -1,9 +1,10 @@
 <template>
-  <div class="dsw-text-white dsw-bg-image-container" :style="primaryImage">
-    <div class="dsw-container dsw-flex dsw-mx-auto dsw-flex-col dsw-justify-center dsw-py-40 dsw-px-4">
-      <h1 class="dsw-text-3xl dsw-line-xl dsw-py-4">{{ top[0].title }}</h1>
-      <div class="dsw-text-44xl dsw-max-w-md dsw-py-6">{{ top[0].sub_title }}</div>
-      <div class="dsw-line-sm dsw-text-26xl dsw-py-6">
+  <div class="dsw-text-white dsw-bg-image-container">
+    <div class="dsw-container dsw-flex dsw-mx-auto dsw-flex-col dsw-justify-center sm:dsw-py-40 dsw-py-10 dsw-px-4 dsw-top-text-container">
+      <h1 class="dsw-text-3xl dsw-line-xl sm:dsw-py-4 dsw-pb-2">{{ top[0].title }}</h1>
+      <div class="dsw-text-44xl dsw-max-w-md sm:dsw-py-6 dsw-pb-8 dsw-pt-2">{{ top[0].sub_title }}</div>
+      <img :src="imageUrl" class="sm:dsw-hidden dsw-main-image">
+      <div class="dsw-line-sm dsw-text-26xl sm:dsw-py-6 dsw-pb-6 dsw-pt-10">
         <button class="dsw-px-12 dsw-py-3 dsw-mr-6 dsw-mb-4" :style="primaryButton">Get Brochure</button>
         <button class="dsw-px-12 dsw-py-3" :style="primaryButton" v-on:click="getform">Get Pricing</button>
       </div>
@@ -112,11 +113,12 @@ export default {
       },
       primaryImage: {
         backgroundImage: `url(${this.top[0].primary_iamge})`
-      }
+      },
+      imageUrl: this.top[0].primary_iamge
     }
   },
   mounted() {
-    
+    document.documentElement.style.setProperty('---primary-hero-image', 'url(' + this.top[0].primary_iamge + ')');
   },
   computed: {
     
@@ -139,45 +141,71 @@ export default {
 </script>
 <style scoped>
 input {
-    border: 1px solid #A0AEC0;
-    background-color: #EDF2F7;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
+  border: 1px solid #A0AEC0;
+  background-color: #EDF2F7;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
 }
 input[type="submit"] {
-    width: 35%;
-    min-width: 250px;
-    color: #fff;
+  width: 35%;
+  min-width: 250px;
+  color: #fff;
 }
 select, textarea {
-    border: 1px solid #A0AEC0;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
+  border: 1px solid #A0AEC0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
 }
 .dsw-input-group {
-    padding: 15px;
-    flex-grow: 1;
+  padding: 15px;
+  flex-grow: 1;
 }
 .dsw-input-group-checkbox {
-    padding: 5px 15px;
-    flex-grow: 1;
+  padding: 5px 15px;
+  flex-grow: 1;
 }
 .dsw-text-red {
-    color: red;
+  color: red;
 }
 .dsw-line-38 {
-    line-height: 38px;
+  line-height: 38px;
 }
 .dsw-line-18 {
-    line-height: 18px;
+  line-height: 18px;
 }
 .dsw-close {
-    position: absolute;
-    top: 25px;
-    left: 35px;
-    cursor: pointer;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  cursor: pointer;
+}
+
+.dsw-bg-image-container {
+  background-image: unset;
+}
+button {
+  min-width: 100%;
+  color: #fff !important
+}
+.dsw-top-text-container {
+  color: #202020;
+}
+.dsw-main-image {
+  min-height: 250px;
+  object-fit: cover;
+}
+@media only screen and (min-width: 640px) {
+  .dsw-bg-image-container {
+    background-image: var(---primary-hero-image);
+  }
+  button {
+    min-width: 250px;
+  }
+  .dsw-top-text-container {
+    color: #fff;
+  }
 }
 .dsw-form-title-bottom-border {
   border-bottom: 1px solid #D8D8D8
@@ -233,33 +261,33 @@ select, textarea {
   transform: rotate(45deg);
 }
 .dsw-form-container {
-    position: absolute;
-    top: 0;
-    right: -950px;
-    max-width:950px;
-    width:100%;
-    min-width:362px;
-    margin:0 auto;
-    background-color:#fff;
-    padding:75px;
-    color:#4A5568;
-    z-index:5;
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+  position: absolute;
+  top: 0;
+  right: -950px;
+  max-width:950px;
+  width:100%;
+  min-width:362px;
+  margin:0 auto;
+  background-color:#fff;
+  padding:75px;
+  color:#4A5568;
+  z-index:5;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 #overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
 }
 </style>

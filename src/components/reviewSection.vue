@@ -48,7 +48,7 @@ export default {
 .dsw-container {
   margin: 0 auto;
 }
-.carousel {
+.dsw-reviews .carousel {
     position: relative;
     text-align: center;
     box-sizing: border-box;
@@ -59,7 +59,7 @@ export default {
     list-style: none;
     margin: 30px 0;
 }
-.carousel__item {
+.dsw-reviews .carousel__item {
   min-height: 250px;
   width: 100%;
   background-color: #fff;
@@ -72,7 +72,7 @@ export default {
 }
 .dsw-reviews .carousel__prev,
 .dsw-reviews .carousel__next {
-  box-sizing: content-box;
+  display: none;
   top: 40% !important;
   background-color: unset;
   width: 25px;
@@ -80,10 +80,10 @@ export default {
   border: 1px solid #202020;
   color: #202020;
 }
-.carousel__next {
+.dsw-reviews .carousel__next {
     right: 15px;
 }
-.carousel__prev {
+.dsw-reviews .carousel__prev {
     left: 15px;
 }
 .dsw-view-all {
@@ -99,6 +99,12 @@ export default {
     cursor: pointer;
     background-color:#C3C9D8 !important;
 }
+@media only screen and (min-width: 640px) {
+  .dsw-reviews .carousel__next,
+  .dsw-reviews .carousel__prev {
+    display: flex;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .dsw-reviews .carousel__pagination-button {
     width: 15px;
@@ -107,13 +113,8 @@ export default {
     border-radius: 50%;
     background-color:#C3C9D8 !important;
   }
-  .dsw-reviews .carousel__next {
-    right: 50px;
-    width: 40px;
-    height: 40px;
-  }
+  .dsw-reviews .carousel__next,
   .dsw-reviews .carousel__prev {
-    left: 50px;
     width: 40px;
     height: 40px;
   }
