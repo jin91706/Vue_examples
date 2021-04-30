@@ -9,6 +9,7 @@
       <Navigation />
       <Pagination />
     </template>
+    <div class="dsw-text-left dsw-text-overlay">{{ this.gallery.text_overlay }}</div>
   </Carousel>
 </div>
 </template>
@@ -48,6 +49,25 @@ export default {
 }
 </script>
 <style>
+.dsw-text-overlay {
+  display: none;
+  position:absolute;
+  color:#fff;
+  background-color:rgba(0, 0, 0, 0.5);
+  padding:40px 140px 40px 40px;
+}
+@media only screen and (min-width: 1280px) {
+  .dsw-text-overlay {
+    display: block;
+    right:-895px;
+    top:335px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .dsw-text-overlay {
+    top:523px;
+  }
+}
 .dsw-gallery .carousel__item img {
   min-height: 275px;
   object-fit: cover;
