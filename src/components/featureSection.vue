@@ -89,12 +89,10 @@ export default {
       var i = num;
       if (this.$refs['btn_menu_' + i].style.maxHeight) {
         this.$refs['btn_menu_' + i].style.maxHeight = null;
-        this.$refs['btn_arrow_' + i].style.transform = "rotate(45deg)";
-        this.$refs['btn_arrow_' + i].style.marginTop = "0";
+        this.$refs['btn_arrow_' + i].style.transform = "rotate(-45deg)";
       } else {
         this.$refs['btn_menu_' + i].style.maxHeight = this.$refs.btn_menu_1.scrollHeight + "px";
-        this.$refs['btn_arrow_' + i].style.transform = "rotate(225deg)";
-        this.$refs['btn_arrow_' + i].style.marginTop = "13px";
+        this.$refs['btn_arrow_' + i].style.transform = "rotate(45deg)";
       }
     }
   }
@@ -103,10 +101,10 @@ export default {
 <style scoped>
 .dsw-feature-mobile-menu {
   justify-content:space-between;
-  color: #202020;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.4s ease-out;
+  color:#202020;
+  overflow:hidden;
+  max-height:0;
+  transition:max-height 0.4s ease-out;
 }
 .dsw-feature-buttons button {
   position: relative;
@@ -131,10 +129,11 @@ export default {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 8px;
+  margin-top: 6px;
 }
 .down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   transition-duration: 0.3s;
 }
 @media only screen and (min-width: 640px) {

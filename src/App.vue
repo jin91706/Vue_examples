@@ -40,6 +40,9 @@ export default {
 }
 </script>
 <style>
+html, body {
+  overflow-x: hidden;
+}
 .dsw-main-container {
   font-family: Lato, Arial, Helvetica, sans-serif;
   color: #202020;
