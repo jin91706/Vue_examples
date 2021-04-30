@@ -22,8 +22,8 @@
     </div>
   </div>
   <div id="overlay" ref="form_overlay" v-on:click="off"></div>
-  <div class="dsw-form-container" ref="price_form">
-    <div class="dsw-close" v-on:click="close">X</div>
+  <div class="dsw-form-container dsw-p-6 sm:dsw-p-16" ref="price_form">
+    <div class="dsw-close sm:dsw-top-5 sm:dsw-left-7 dsw-top-2 dsw-left-3" v-on:click="close">X</div>
     <div class="dsw-py-4 dsw-mx-4 dsw-form-title-bottom-border">
         <h1 class="dsw-text-28xl dsw-line-38">Get the latest FreeFlow&#174; pricing right here!</h1>
         <p class="dsw-text-sm">Please give us your contact info so that we can send you pricing.</p>
@@ -177,11 +177,8 @@ select, textarea {
 }
 .dsw-close {
   position: absolute;
-  top: 25px;
-  left: 35px;
   cursor: pointer;
 }
-
 .dsw-bg-image-container {
   background-image: unset;
 }
@@ -269,7 +266,6 @@ button {
   min-width:362px;
   margin:0 auto;
   background-color:#fff;
-  padding:75px;
   color:#4A5568;
   z-index:5;
   -webkit-transition-duration: 0.3s;
