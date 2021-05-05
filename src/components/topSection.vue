@@ -1,18 +1,18 @@
 <template>
   <div class="dsw-text-white dsw-bg-image-container">
-    <div class="dsw-container dsw-flex dsw-mx-auto dsw-flex-col dsw-justify-center sm:dsw-py-40 dsw-py-10 dsw-px-4 dsw-top-text-container">
-      <h1 class="dsw-text-3xl dsw-line-xl sm:dsw-py-4 dsw-pb-2">{{ top[0].title }}</h1>
-      <div class="dsw-text-44xl dsw-max-w-md sm:dsw-py-6 dsw-pb-8 dsw-pt-2">{{ top[0].sub_title }}</div>
+    <div class="dsw-container dsw-flex dsw-mx-auto dsw-flex-col dsw-justify-center sm:dsw-py-40 dsw-pt-10 dsw-pb-0 dsw-px-4 dsw-top-text-container">
+      <h1 class="dsw-text-xl sm:dsw-text-3xl dsw-leading-36 sm:dsw-leading-xl dsw-font-semibold sm:dsw-py-4 dsw-pb-2">{{ top[0].title }}</h1>
+      <div class="sm:dsw-leading-52 dsw-text-base sm:dsw-text-44xl dsw-max-w-xxs sm:dsw-max-w-md sm:dsw-py-6 dsw-pb-8 dsw-pt-2">{{ top[0].sub_title }}</div>
       <img :src="imageUrl" class="sm:dsw-hidden dsw-main-image">
-      <div class="dsw-line-sm dsw-text-26xl sm:dsw-py-6 dsw-pb-6 dsw-pt-10">
-        <button class="dsw-px-12 dsw-py-3 dsw-mr-6 dsw-mb-4" :style="primaryButton">Get Brochure</button>
-        <button class="dsw-px-12 dsw-py-3" :style="primaryButton" v-on:click="getform">Get Pricing</button>
+      <div class="dsw-line-sm dsw-text-26xl sm:dsw-py-6 dsw-pb-0 sm:dsw-pb-6 dsw-pt-10">
+        <button class="dsw-px-12 dsw-py-3 dsw-mr-6 dsw-mb-4 dsw-text-xs sm:dsw-text-lg dsw-leading-22 sm:dsw-leading-32 dsw-font-bold" :style="primaryButton">Get Brochure</button>
+        <button class="dsw-px-12 dsw-py-3 dsw-text-xs sm:dsw-text-lg dsw-leading-22 sm:dsw-leading-32 dsw-font-bold" :style="primaryButton" v-on:click="getform">Get Pricing</button>
       </div>
     </div>
   </div>
   <div class="dsw-container dsw-flex dsw-mx-auto dsw-flex-col dsw-justify-center dsw-pt-4 dsw-pb-10 dsw-px-4">
     <div class="dsw-mx-auto dsw-max-w-4xl dsw-px-2">
-      <p class="dsw-my-8">
+      <p class="dsw-my-8 dsw-text-sm sm:dsw-text-base dsw-leading-30 sm:dsw-leading-34">
         {{ top[0].top_paragraph_content }}
       </p>
       <div class="dsw-mx-auto dsw-flex">
@@ -168,12 +168,6 @@ select, textarea {
 }
 .dsw-text-red {
   color: red;
-}
-.dsw-line-38 {
-  line-height: 38px;
-}
-.dsw-line-18 {
-  line-height: 18px;
 }
 .dsw-close {
   position: absolute;

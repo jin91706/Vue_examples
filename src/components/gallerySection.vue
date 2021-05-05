@@ -1,15 +1,17 @@
 <template>
-<div class="dsw-container dsw-gallery dsw-px-4 dsw-pt-24 dsw-pb-28">
-  <h1 class="dsw-text-2xl dsw-text-center dsw-my-6 dsw-pb-8 dsw-line-lg">Gallery</h1>
+<div class="dsw-container dsw-gallery dsw-px-4 dsw-pt-12 dsw-pb-8 sm:dsw-pb-28">
+  <h1 class="dsw-leading-36 dsw-text-xl sm:dsw-leading-lg sm:dsw-text-2xl dsw-font-semibold dsw-text-center dsw-my-6 dsw-pb-8">Gallery</h1>
   <Carousel :settings="settings">
     <Slide v-for="(image, index) in gallery.large" :key="index">
-      <div class="carousel__item"><img :src="image"/></div>
+      <div class="carousel__item">
+        <img :src="image.image"/>
+        <div class="dsw-text-left dsw-text-overlay">{{ image.caption }}</div>
+      </div>
     </Slide>
     <template #addons>
       <Navigation />
       <Pagination />
     </template>
-    <div class="dsw-text-left dsw-text-overlay">{{ this.gallery.text_overlay }}</div>
   </Carousel>
 </div>
 </template>
@@ -49,23 +51,24 @@ export default {
 }
 </script>
 <style>
-.dsw-text-overlay {
-  display: none;
+/* Styles in this component could not be scoped due to the use of Vue3-carousel plugin. So all css has been prefixed for this component */
+.dsw-gallery .dsw-text-overlay {
+  display:none;
   position:absolute;
   color:#fff;
   background-color:rgba(0, 0, 0, 0.5);
   padding:40px 140px 40px 40px;
 }
 @media only screen and (min-width: 1280px) {
-  .dsw-text-overlay {
+  .dsw-gallery .dsw-text-overlay {
     display: block;
-    right:-895px;
-    top:335px;
+    left:0px;
+    bottom:0px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .dsw-text-overlay {
-    top:523px;
+  .dsw-gallery .dsw-text-overlay {
+    bottom:0px;
   }
 }
 .dsw-gallery .carousel__item img {
@@ -75,7 +78,7 @@ export default {
 .dsw-gallery .carousel__pagination-button--active {
   border: 3px solid var(--carousel-color-primary) !important;
 }
-.dsw-container {
+.dsw-gallery.dsw-container {
   margin: 0 auto;
 }
 .dsw-gallery .carousel {
@@ -90,6 +93,7 @@ export default {
     margin-top: 10px;
 }
 .dsw-gallery .carousel__item {
+  position: relative;
   min-height: 250px;
   width: 100%;
   background-color: #fff;
@@ -145,17 +149,26 @@ export default {
     padding: 0;
   }
   .dsw-gallery .carousel__pagination-button {
-    width: 135px;
+    width: 95px;
+  }
+  .dsw-gallery .carousel__pagination {
+    margin-top: 4px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .dsw-gallery .carousel__pagination-button {
     width: 150px;
     height: 75px;
-    margin: 10px;
+    margin: 7px;
   }
   .dsw-gallery .carousel__pagination {
-    margin-top: 0;
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .carousel__item img {
+    height: 650px;
+    width: 1800px;
   }
 }
 </style>

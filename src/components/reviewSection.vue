@@ -1,9 +1,23 @@
 <template>
-<div class="dsw-container dsw-px-4 dsw-pt-24 dsw-pb-28 dsw-reviews">
-  <h1 class="dsw-text-2xl dsw-text-center dsw-my-6 dsw-pb-8 dsw-line-lg">Reviews</h1>
+<div class="dsw-container dsw-px-0 dsw-pt-12 dsw-pb-8 sm:dsw-pb-28 dsw-reviews">
+  <h1 class="dsw-leading-36 dsw-text-xl sm:dsw-leading-lg sm:dsw-text-2xl dsw-font-semibold dsw-text-center dsw-my-6 dsw-pb-8">Reviews</h1>
   <Carousel :settings="settings">
     <Slide v-for="(image, index) in reviews.large" :key="index">
-      <div class="carousel__item"><img :src="image"/></div>
+      <div class="carousel__item">
+        <div class="dsw-review-content-container" :style="{ backgroundImage: `url(${image.image})`}">
+          <div class="dsw-review-content">
+            <div>Why did we wait so long!</div>
+            <div>After receiving my neighbor’s suggestion to invest in a Freeflow Spa after they tried 2 other mfrs previously, 
+I am glad I did. Got lucky that I purchased it when I did…  due to the Covid-related demand for spas that developed. Impressed with quality manufacturing and can’t say enough good things about our local dealer Artesian Pools and Spas here in Pennsylvania! Never even went to a competing brand to compare—which is usually not how I make a larger ticket purchase! My favorite time is to relax under the stars late at night. This will be a purchase you won’t regret.</div>
+            <div>Read More</div>
+            <div>
+              <div>Rich Froning</div>
+              <div>Little Falls, NJ</div>
+            </div>
+          </div>
+        </div>
+        <!-- <img :src="image.image"/> -->
+      </div>
     </Slide>
     <template #addons>
       <Navigation />
@@ -45,7 +59,8 @@ export default {
 }
 </script>
 <style>
-.dsw-container {
+/* Styles in this component could not be scoped due to the use of Vue3-carousel plugin. So all css has been prefixed for this component */
+.dsw-reviews.dsw-container {
   margin: 0 auto;
 }
 .dsw-reviews .carousel {
@@ -60,6 +75,7 @@ export default {
     margin: 30px 0;
 }
 .dsw-reviews .carousel__item {
+  position: relative;
   min-height: 250px;
   width: 100%;
   background-color: #fff;
@@ -77,16 +93,16 @@ export default {
   background-color: unset;
   width: 25px;
   height: 25px;
-  border: 1px solid #202020;
+  border: 2px solid #202020;
   color: #202020;
 }
 .dsw-reviews .carousel__next {
-    right: 15px;
+  display: none;
 }
 .dsw-reviews .carousel__prev {
-    left: 15px;
+  display: none;
 }
-.dsw-view-all {
+.dsw-reviews .dsw-view-all {
   background-color: var(--carousel-color-primary);
   color: #fff;
   padding: 10px 45px;
@@ -99,28 +115,105 @@ export default {
     cursor: pointer;
     background-color:#C3C9D8 !important;
 }
+.dsw-reviews .carousel__pagination-button--active {
+  background-color: var(--carousel-color-primary) !important;
+  border: unset;
+}
+.dsw-reviews.dsw-container {
+  max-width: 100%;
+}
+.dsw-review-content-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 350px;
+  color:#202020;
+  justify-content: center;
+  align-items: flex-end;
+}
+.dsw-review-content {
+  padding: 50px;
+  background-color: #fff;
+  text-align: left;
+  max-width: 90%;
+  margin-top: 250px;
+}
 @media only screen and (min-width: 640px) {
-  .dsw-reviews .carousel__next,
-  .dsw-reviews .carousel__prev {
-    display: flex;
+  .dsw-review-content-container {
+    background-position: 100% 0%;
+    background-size: 100% 450px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .dsw-reviews .carousel__pagination-button {
-    width: 15px;
-    height: 15px;
     margin: 10px;
-    border-radius: 50%;
-    background-color:#C3C9D8 !important;
   }
   .dsw-reviews .carousel__next,
   .dsw-reviews .carousel__prev {
     width: 40px;
     height: 40px;
   }
+  .dsw-reviews .carousel__next {
+    right: 40px;
+    display: flex;
+  }
+  .dsw-reviews .carousel__prev {
+    left: 40px;
+    display: flex;
+  }
+  .dsw-review-content {
+    margin-top: 0px;
+    margin-left: 0px;
+    max-width: 800px;
+  }
+  .dsw-review-content-container {
+    height: 650px;
+    background-position: 50% 0%;
+    background-size: 85% 550px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .dsw-reviews.dsw-container {
+    max-width: 1024px;
+  }
 }
-.dsw-reviews .carousel__pagination-button--active {
-  background-color: var(--carousel-color-primary) !important;
-  border: unset;
+@media only screen and (min-width: 1280px) {
+  .dsw-review-content {
+    padding: 50px;
+    background-color: #fff;
+    max-width: 850px;
+    text-align: left;
+    margin-left: 50px;
+  }
+  .dsw-review-content-container {
+    background-position: 90% 50%;
+    background-size: 50% 550px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .dsw-reviews .carousel__next {
+    right: 35px;
+  }
+  .dsw-reviews .carousel__prev {
+    left: 35px;
+  }
+  .dsw-reviews.dsw-container {
+    max-width: 1280px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .dsw-reviews.dsw-container {
+    max-width: 1800px;
+  }
+  .dsw-review-content {
+    margin-left: 150px;
+  }
+  .dsw-reviews .carousel__next {
+    right: 50px;
+  }
+  .dsw-reviews .carousel__prev {
+    left: 50px;
+  }
 }
 </style>

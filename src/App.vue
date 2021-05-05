@@ -1,10 +1,12 @@
 <template>
 <div class="dsw-w-full dsw-mb-60 dsw-main-container dsw-text-base">
   <topSection v-if="pageInfo" :top="pageInfo[0].topSection"/>
+  <collectionFeatureSection v-if="pageInfo && colFeatureSecion" :collections="pageInfo[0].collectionFeatureSection"/>
   <gallerySection v-if="pageInfo" :gallery="pageInfo[0].gallerySection"/>
   <viewModelsSection v-if="pageInfo" :tubs="pageInfo[0].viewModelsSection"/>
   <featureSection v-if="pageInfo" :features="pageInfo[0].featureSection"/>
   <reviewSection v-if="pageInfo" :reviews="pageInfo[0].reviewSection"/>
+  <utopiaSection v-if="pageInfo && utopiaSection" :utopia="pageInfo[0].utopiaSection"/>
   <bottomSection v-if="pageInfo" :bottom="pageInfo[0].bottomSection"/>
 </div>
 </template>
@@ -15,6 +17,8 @@ import viewModelsSection from './components/viewModelsSection.vue';
 import featureSection from './components/featureSection.vue';
 import reviewSection from './components/reviewSection.vue';
 import bottomSection from './components/bottomSection.vue';
+import collectionFeatureSection from './components/collectionFeatureSection.vue';
+import utopiaSection from './components/utopiaSection.vue';
 import axios from 'axios'
 export default {
   name: 'App',
@@ -24,16 +28,20 @@ export default {
     viewModelsSection,
     featureSection,
     reviewSection,
-    bottomSection
+    bottomSection,
+    collectionFeatureSection,
+    utopiaSection
   },
   data() {
    return {
-      pageInfo: null
+      pageInfo: null,
+      colFeatureSecion: false,
+      utopiaSection: false
     }
   },
   created() {
      //Get json file from the page name we will have to rename this folder 
-    axios.get('/dswaves/pageName/main.json').then((response) => {
+    axios.get('/dswaves/freeflow/main.json').then((response) => {
         this.pageInfo = response.data
     });
   }
@@ -54,32 +62,11 @@ html, body {
 *:focus {
   outline: 0 !important;
 }
-p {
-  line-height: 34px;
-}
-img {
-  width:100%;
-}
-.dsw-line-sm {
-  line-height: 32px !important;
-}
-.dsw-line-xl {
-  line-height: 72px;
-}
-.dsw-line-lg {
-  line-height: 62px;
-}
-.dsw-text-44xl {
-  line-height: 52px;
-}
-.dsw-flex-col-3 {
-  flex-grow: 0;
-  flex-basis: 100%;
-}
-@media only screen and (min-width: 1024px) {
-  .dsw-flex-col-3 {
-    flex-grow: 0;
-    flex-basis: 30%;
-  }
+/* global style for copyright symbol. Could not used scoped styles in v-html output. */
+.dsw-collection-feature .dsw-collection-name span {
+  font-size: 16px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: -4px;
 }
 </style>
