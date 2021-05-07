@@ -1,8 +1,8 @@
 <template>
   <div class="dsw-text-white dsw-bg-image-container">
     <div class="dsw-container dsw-flex dsw-mx-auto dsw-flex-col dsw-justify-center sm:dsw-py-40 dsw-pt-10 dsw-pb-0 dsw-px-4 dsw-top-text-container">
-      <h1 class="dsw-text-xl sm:dsw-text-3xl dsw-leading-36 sm:dsw-leading-xl dsw-font-semibold sm:dsw-py-4 dsw-pb-2">{{ top[0].title }}</h1>
-      <div class="sm:dsw-leading-52 dsw-text-base sm:dsw-text-44xl dsw-max-w-xxs sm:dsw-max-w-md sm:dsw-py-6 dsw-pb-8 dsw-pt-2">{{ top[0].sub_title }}</div>
+      <h1 class="dsw-text-xl sm:dsw-text-3xl dsw-leading-36 sm:dsw-leading-xl dsw-font-semibold sm:dsw-py-4 dsw-pb-2">{{ top.title }}</h1>
+      <div class="sm:dsw-leading-52 dsw-text-base sm:dsw-text-44xl dsw-max-w-xxs sm:dsw-max-w-md sm:dsw-py-6 dsw-pb-8 dsw-pt-2">{{ top.sub_title }}</div>
       <img :src="imageUrl" class="sm:dsw-hidden dsw-main-image">
       <div class="dsw-line-sm dsw-text-26xl sm:dsw-py-6 dsw-pb-0 sm:dsw-pb-6 dsw-pt-10">
         <button class="dsw-px-12 dsw-py-3 dsw-mr-6 dsw-mb-4 dsw-text-xs sm:dsw-text-lg dsw-leading-22 sm:dsw-leading-32 dsw-font-bold" :style="primaryButton">Get Brochure</button>
@@ -13,7 +13,7 @@
   <div class="dsw-container dsw-flex dsw-mx-auto dsw-flex-col dsw-justify-center dsw-pt-4 dsw-pb-10 dsw-px-4">
     <div class="dsw-mx-auto dsw-max-w-4xl dsw-px-2">
       <p class="dsw-my-8 dsw-text-sm sm:dsw-text-base dsw-leading-30 sm:dsw-leading-34">
-        {{ top[0].top_paragraph_content }}
+        {{ top.top_paragraph_content }}
       </p>
       <div class="dsw-mx-auto dsw-flex">
         <img src="/img/stars.png" class="dsw-mr-2" style="max-width:7rem;">
@@ -25,7 +25,7 @@
   <div class="dsw-form-container dsw-p-6 sm:dsw-p-16" ref="price_form">
     <div class="dsw-close sm:dsw-top-5 sm:dsw-left-7 dsw-top-2 dsw-left-3" v-on:click="close">X</div>
     <div class="dsw-py-4 dsw-mx-4 dsw-form-title-bottom-border">
-        <h1 class="dsw-text-28xl dsw-line-38">Get the latest FreeFlow&#174; pricing right here!</h1>
+        <h1 class="dsw-text-28xl dsw-line-38 dsw-company-title">Get the latest {{ top.company }}® pricing right here!</h1>
         <p class="dsw-text-sm">Please give us your contact info so that we can send you pricing.</p>
     </div>
     <form>
@@ -33,7 +33,7 @@
           <div class="dsw-input-group">
               <label class="dsw-block dsw-line-18 dsw-text-xs dsw-py-2 dsw-font-bold">Which model are you interested in? <span class="dsw-text-red">*</span></label>
               <select class="dsw-w-full">
-                  <option>Fantasy - Entice&#174; Premier 5 Person</option>
+                  <option>{{ top.company }} - Entice® Premier 5 Person</option>
               </select>
           </div>
       </div>
@@ -106,19 +106,19 @@ export default {
   data() {
     return {
       primaryButton: {
-        backgroundColor: this.top[0].bg_button_color
+        backgroundColor: this.top.bg_button_color
       },
       primaryTextColor: {
-        color: this.top[0].view_reviews_color
+        color: this.top.view_reviews_color
       },
       primaryImage: {
-        backgroundImage: `url(${this.top[0].primary_iamge})`
+        backgroundImage: `url(${this.top.primary_iamge})`
       },
-      imageUrl: this.top[0].primary_iamge
+      imageUrl: this.top.primary_iamge
     }
   },
   mounted() {
-    document.documentElement.style.setProperty('---primary-hero-image', 'url(' + this.top[0].primary_iamge + ')');
+    document.documentElement.style.setProperty('---primary-hero-image', 'url(' + this.top.primary_iamge + ')');
   },
   computed: {
     

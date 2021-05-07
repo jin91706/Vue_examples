@@ -1,13 +1,13 @@
 <template>
 <div class="dsw-w-full dsw-mb-60 dsw-main-container dsw-text-base">
-  <topSection v-if="pageInfo" :top="pageInfo[0].topSection"/>
-  <collectionFeatureSection v-if="pageInfo && colFeatureSecion" :collections="pageInfo[0].collectionFeatureSection"/>
-  <gallerySection v-if="pageInfo" :gallery="pageInfo[0].gallerySection"/>
-  <viewModelsSection v-if="pageInfo" :tubs="pageInfo[0].viewModelsSection"/>
-  <featureSection v-if="pageInfo" :features="pageInfo[0].featureSection"/>
-  <reviewSection v-if="pageInfo" :reviews="pageInfo[0].reviewSection"/>
-  <utopiaSection v-if="pageInfo && utopiaSection" :utopia="pageInfo[0].utopiaSection"/>
-  <bottomSection v-if="pageInfo" :bottom="pageInfo[0].bottomSection"/>
+  <topSection v-if="loaded" :top="pageInfo.topSection"/>
+  <collectionFeatureSection v-if="loaded && colFeatureSecion" :collections="pageInfo.collectionFeatureSection"/>
+  <gallerySection v-if="loaded" :gallery="pageInfo.gallerySection"/>
+  <viewModelsSection v-if="loaded" :tubs="pageInfo.viewModelsSection"/>
+  <featureSection v-if="loaded" :features="pageInfo.featureSection"/>
+  <reviewSection v-if="loaded" :reviews="pageInfo.reviewSection"/>
+  <utopiaSection v-if="loaded && utopiaSection" :utopia="pageInfo.utopiaSection"/>
+  <bottomSection v-if="loaded" :bottom="pageInfo.bottomSection"/>
 </div>
 </template>
 <script>
@@ -36,13 +36,15 @@ export default {
    return {
       pageInfo: null,
       colFeatureSecion: false,
-      utopiaSection: false
+      utopiaSection: false,
+      loaded: false
     }
   },
   created() {
      //Get json file from the page name we will have to rename this folder 
-    axios.get('/dswaves/freeflow/main.json').then((response) => {
-        this.pageInfo = response.data
+    axios.get('/dswaves/freeflow/sport.json').then((response) => {
+        this.pageInfo = response.data;
+        this.loaded = true;
     });
   }
 }
@@ -63,7 +65,9 @@ html, body {
   outline: 0 !important;
 }
 /* global style for copyright symbol. Could not used scoped styles in v-html output. */
-.dsw-collection-feature .dsw-collection-name span {
+.dsw-collection-feature .dsw-collection-name span,
+.dsw-models span,
+.dsw-company-title span {
   font-size: 16px;
   vertical-align: top;
   display: inline-block;

@@ -1,0 +1,223 @@
+{
+  "topSection": {
+      "company": "FreeFlow",
+      "title": "Sport Series",
+      "sub_title": "Everything you want in a hot tub",
+      "primary_iamge": "/img/freeflow/sport/sport_primary.png",
+      "bg_button_color": "#293B96",
+      "top_paragraph_content": "Everything you want in a hot tub - durable, energy efficient, portable & affordable! With Plug-N-Play technology, setup is as easy as adding water from a garden hose, plug it into any standard 110v outlet near your spa, and relax!",
+      "view_reviews_color": "#293B96"
+  },
+  "gallerySection": {
+    "large": [
+      { 
+          "image": "/img/freeflow/sport/1600x700-freeflow-sport-gallery-aptos-sand-girls.jpg",
+          "caption": "Capture those moments that become family memories to last a lifetime when you disconnect in your Freeflow Spas hot tub."
+      },
+      {
+          "image":"/img/freeflow/sport/1600x700-freeflow-sport-gallery-azure-sand-smile.jpg",
+          "caption": "The digital control panel puts the power in your hands to change the temperature, jets, and lights with the touch of a button."
+      },
+      {
+          "image":"/img/freeflow/sport/1600x700-freeflow-sport-gallery-azure-sand-jets.jpg",
+          "caption": "Stainless steel jets massage muscles into maximum relaxation mode. "
+      },
+      {
+          "image":"/img/freeflow/sport/1600x700-freeflow-sport-gallery-sand-icebucket.jpg",
+          "caption": "With a built-in ice bucket, hot tubbers can keep their favorite cold and within reach from the comfort of their bubbly oasis."
+      },
+      {
+          "image":"/img/freeflow/sport/1600x700-freeflow-sport-gallery-tristar-sand-couple-snow.jpg",
+          "caption": "Hot tub in any weather with Freeflow Spas’ full foam insulation that keeps the water warm and ready to soak without a drain on your energy bill."
+      },
+      {
+          "image":"/img/freeflow/sport/1600x700-freeflow-sport-gallery-cascina-taupe-water.jpg",
+          "caption": "Relaxing is even more enjoyable with Freeflow Spas digital control panel and built-in waterfall."
+      }
+    ],
+    "thumb": [
+      "/img/freeflow/sport/1600x700-freeflow-sport-gallery-aptos-sand-girls.jpg",
+      "/img/freeflow/sport/1600x700-freeflow-sport-gallery-azure-sand-smile.jpg",
+      "/img/freeflow/sport/1600x700-freeflow-sport-gallery-azure-sand-jets.jpg",
+      "/img/freeflow/sport/1600x700-freeflow-sport-gallery-sand-icebucket.jpg",
+      "/img/freeflow/sport/1600x700-freeflow-sport-gallery-tristar-sand-couple-snow.jpg",
+      "/img/freeflow/sport/1600x700-freeflow-sport-gallery-cascina-taupe-water.jpg"
+    ],
+    "primary_color": "#293B96"
+  },
+  "viewModelsSection": { 
+    "settings" : {
+      "links": "#293B96"
+    },
+    "products": [{
+          "name": "Monterey<span>&trade;</span>",
+          "seats": "7 Seats Spa",
+          "jets": "22 Jets",
+          "dimensions": "6'5\" x 7'3\" x 34\"",
+          "image": "/img/freeflow/sport/models/monterey.png"
+        },
+        {
+          "name": "Excursion<span>&#174;</span>",
+          "seats": "5 Seats Spa",
+          "jets": "25 Jets",
+          "dimensions": "6'5\" x 7'2\" x 33\"",
+          "image": "/img/freeflow/sport/models/excursion.png"
+        },
+        {
+          "name": "Aptos<span>&#174;</span>",
+          "seats": "5 Seats Spa",
+          "jets": "18 Jets",
+          "dimensions": "6'6\" x 6'6\" x 34\"",
+          "image": "/img/freeflow/sport/models/aptos.png"
+        },
+        {
+          "name": "Azure<span>&trade;</span>",
+          "seats": "4 Seats Spa",
+          "jets": "19 Jets",
+          "dimensions": "5'3\" x 6'8\" x 33\"",
+          "image": "/img/freeflow/sport/models/azure.png"
+        },
+        {
+          "name": "Cascina<span>&#174;</span>",
+          "seats": "4 Seats Spa",
+          "jets": "17 Jets",
+          "dimensions": "5'8\" x 5'3\" x 32\"",
+          "image": "/img/freeflow/sport/models/cascina.png"
+        },
+        {
+          "name": "Tristar<span>&trade;</span>",
+          "seats": "3 Seats Spa",
+          "jets": "17 Jets",
+          "dimensions": "5'10\" x 5'10\" x 31\"",
+          "image": "/img/freeflow/sport/models/tristar.png"
+        },
+        {
+          "name": "Mini<span>&trade;</span>",
+          "seats": "2 Seats Spa",
+          "jets": "10 Jets",
+          "dimensions": "6'9\" x 3'11\" x \"",
+          "image": "/img/freeflow/sport/models/mini.png"
+        }
+      ]
+    },
+  "featureSection": {
+    "bg_button_color": "#ffffff",
+    "border_button_color": "3px solid #293B96",
+    "button_color": "#293B96",
+    "active_bg_button_color": "#293B96",
+    "active_border_button_color": "3px solid #293B96",
+    "active_button_color": "#ffffff",
+    "items": [
+      {
+        "button": "Power",
+        "title": "Plug-N-Play Technology",
+        "sub_title": "All Freeflow Spas come standard as a 110-volt Plug-N-Play hot tub, but can easily be converted to 220-volts by a licensed electrician. Upon delivery all you need to do is simply add water, plug it in, and enjoy!",
+        "primary_iamge": "/img/freeflow/sport/features/FFPowerFEAT.jpg"
+      },
+      {
+        "button": "Quality",
+        "title": "Superior Strength",
+        "sub_title": "Freeflow Spas® are rotationally molded, unibody hot tubs where the shell and cabinet are all one piece. The benefits of rotomolded hot tubs are superior durability at an affordable cost.",
+        "primary_iamge": "/img/freeflow/sport/features/FFQualityFEAT.jpg"
+      },
+      {
+        "button": "Design",
+        "title": "Portable Hot Tubs You’ll Love",
+        "sub_title": "Hot and ready whenever, wherever you are. Freeflow Spas has hot tubs that can fit your backyard, including condo balconies and porches. We even have a triangular portable hot tub for corner spaces! Refer to product specifications for weight. Don't own your home? No worries! Our spas are perfect for renters too, because there's no custom installation required. Our spas can be filled with a garden hose and plugged directly into any standard 110v outlet. Do you move a lot? Take your spa with you. Freeflow Spas’ lightweight unibody design means you can easily take it with you.",
+        "primary_iamge": "/img/freeflow/sport/features/FFDesignFEAT.jpg"
+      },
+      {
+        "button": "Energy",
+        "title": "Energy Efficient Hot Tubs",
+        "sub_title": "For low monthly operating costs. Freeflow Spas hot tubs are fully foamed for maximum energy efficiency. Paired with the thermal locking cover (that comes with your spa purchase), you can keep your warm water in so that it’s ready to use whenever you need a soak. Plus, our digital control panel puts the power in your hand to activate eco-friendly modes that only have your hot tub run when you need it to. No more water filter cycles or hot water escaping.",
+        "primary_iamge": "/img/freeflow/sport/features/FFEnergyFEAT.jpg"
+      }
+    ]
+  },
+  "reviewSection": { 
+    "large": [
+      {
+        "image":"/img/freeflow/sport/reviews/800x500-freeflow-sport-review-1.jpg",
+        "primary_color": "#293B96",
+        "title": "Three years and going strong",
+        "desc": "Going on year three in our Aptos. We love it. Easy install, easy to run, very comfortable. In very cold weather (single digits)it goes from 104 to 100 in about an hour with the full bubbles. Pretty good heat retention. Temps in the 20s on up, it only drops to 101 or higher. We were very glad we made the investment.",
+        "reviewer_name": "Steve",
+        "reviewer_location": ""
+      },
+      {
+        "image":"/img/freeflow/sport/reviews/800x500-freeflow-sport-review-2.jpg",
+        "primary_color": "#293B96",
+        "title": "Soooo easy...",
+        "desc": "Just a quick word... we have just received and set up our 110v Monterey hot tub. Other than the initial \"heating\" period which I now understand (1ks vs 4kw), we are LOVING IT ! We are so looking forward to many many years of soaking pleasure. Thanks Freeflow for making our \"hot tubbing\" dreams possible...",
+        "reviewer_name": "By Tom Kilmartin",
+        "reviewer_location": ""
+      },
+      {
+        "image":"/img/freeflow/sport/reviews/800x500-freeflow-sport-review-3.jpg",
+        "primary_color": "#293B96",
+        "title": "Relax and reconnect!",
+        "desc": "Love how it has brought our family together and the conversations we have in our tub. It's also a great way to relax without killing the budget. Thank you!!!",
+        "reviewer_name": "Brian Potenziano",
+        "reviewer_location": ""
+      }
+    ],
+    "primary_color": "#293B96",
+    "secondary_color": "#293B96"
+  },
+  "bottomSection": [
+    {
+      "title": "Shop Other Hot Tub Collections",
+      "sub_title": "With three different hot tub Collections there's one that fits your lifestyle.",
+      "link_color": "#293B96",
+      "primary_images": [
+        { 
+          "src":"/img/freeflow/sport/sport_bottom.png" ,
+          "link_location":"http://google.com",
+          "link_text":"Premier Series",
+          "desc":"Hot tubbing with a touch of elegance"
+        }
+      ]
+    }
+  ],
+  "collectionFeatureSection": {
+    "settings" : {
+      "links": "#293B96"
+    },
+    "products": [
+      {
+        "name": "FRESHWATER<span>&#174;</span> SALT SYSTEM READY",
+        "desc": "A revolution in worry-free water care that helps you spend more time enjoying your spa and less time maintaining it.",
+        "image": "/img/hl_collection/HSHLCFSS.png"
+      },
+      {
+        "name": "WIRELESS REMOTE CONTROL",
+        "desc": "Operate spa functions from anywhere in the spa and up to 30 feet away with this unique, easy-to-read color touchscreen.",
+        "image": "/img/hl_collection/HSSHCP.png"
+      },
+      {
+        "name": "MOTO-MASSAGE<span>&#174;</span> DX JET",
+        "desc": "Patented moving jets provide two powerful water streams that sweep up and down your back for a massage like no other.",
+        "image": "/img/hl_collection/HMMDXJ.png"
+      },
+      {
+        "name": "SUPER ENERGY EFFICIENT AND ENERGY SMART<span>&#174;</span>",
+        "desc": "High-density, full-foam insulation is the same found in commercial freezers. With the comprehensive Energy Smart system of innovations, these are our most energy-efficient hot tubs.",
+        "image": "/img/hl_collection/HSHLSEE.png"
+      },
+      {
+        "name": "100% NO-BYPASS FILTRATION AND TRI-X<span>&#174;</span>",
+        "desc": "All the water is filtered all the time and dishwasher-safe Tri-X filters help keep water crystal clear.",
+        "image": "/img/hl_collection/HSNBF.png"
+      },
+      {
+        "name": "POLYMER STRUCTURE AND BASE PAN",
+        "desc": "Built for durability and long life with a structure that will never rust or rot.",
+        "image": "/img/hl_collection/HSSHPS.png"
+      }
+    ]
+  },
+  "utopiaSection": {
+    "primary_image": "/img/utopia/CSUF.png",
+    "accordion_color": "#293B96"
+  }
+}

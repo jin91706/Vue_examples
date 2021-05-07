@@ -6,13 +6,14 @@
       <div class="carousel__item">
         <div class="dsw-review-content-container" :style="{ backgroundImage: `url(${image.image})`}">
           <div class="dsw-review-content">
-            <div>Why did we wait so long!</div>
-            <div>After receiving my neighbor’s suggestion to invest in a Freeflow Spa after they tried 2 other mfrs previously, 
-I am glad I did. Got lucky that I purchased it when I did…  due to the Covid-related demand for spas that developed. Impressed with quality manufacturing and can’t say enough good things about our local dealer Artesian Pools and Spas here in Pennsylvania! Never even went to a competing brand to compare—which is usually not how I make a larger ticket purchase! My favorite time is to relax under the stars late at night. This will be a purchase you won’t regret.</div>
-            <div>Read More</div>
-            <div>
-              <div>Rich Froning</div>
-              <div>Little Falls, NJ</div>
+            <div class="dsw-quotes">&#8220;</div>
+            <div class="dsw-font-bold dsw-pb-4 dsw-pt-1 dsw-text-28xl dsw-leading-36">{{ image.title }}</div>
+            <div class="dsw-text-base dsw-leading-34" v-if="!readMore">{{ image.desc.slice(0, 200) }}...</div>
+            <div class="dsw-text-base dsw-leading-34" v-if="readMore" v-html="image.desc"></div>
+            <div class="dsw-text-sm dsw-leading-24 dsw-read-more dsw-font-bold dsw-py-2 dsw-cursor-pointer" v-if="!readMore" @click="doReadMore">Read More</div>
+            <div class="dsw-py-8">
+              <div class="dsw-leading-28 dsw-text-sm dsw-font-bold">{{ image.reviewer_name }}</div>
+              <div class="dsw-leading-28 dsw-text-sm">{{ image.reviewer_location }}</div>
             </div>
           </div>
         </div>
@@ -46,15 +47,20 @@ export default {
     return {
       settings: {
         wrapAround: true
-      }
+      },
+      readMore: false
     }
   },
   mounted() {
     document.documentElement.style.setProperty('--carousel-color-primary', '' + this.reviews.primary_color + '');
+    document.documentElement.style.setProperty('--secondary-color', '' + this.reviews.secondary_color + '');
   },
   computed: {
   },
   methods: {
+    doReadMore() {
+      this.readMore = true;
+    }
   }
 }
 </script>
@@ -128,16 +134,27 @@ export default {
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100% 350px;
-  color:#202020;
+  color: #202020;
   justify-content: center;
   align-items: flex-end;
 }
 .dsw-review-content {
+  position: relative;
   padding: 50px;
   background-color: #fff;
   text-align: left;
   max-width: 90%;
   margin-top: 250px;
+}
+.dsw-quotes {
+  color: var(--carousel-color-primary);
+  font-size: 96px;
+  font-family: "Times New Roman";
+  font-weight: 900;
+  line-height: 34px;
+}
+.dsw-read-more {
+  color: var(--secondary-color);
 }
 @media only screen and (min-width: 640px) {
   .dsw-review-content-container {

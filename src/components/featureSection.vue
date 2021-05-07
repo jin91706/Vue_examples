@@ -68,8 +68,10 @@ export default {
 </script>
 <style scoped>
 img {
-  width:auto;
-  height:auto;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 400px;
   object-fit:contain;
 }
 .dsw-feature-mobile-menu {
@@ -129,8 +131,8 @@ img {
 }
 @media only screen and (min-width: 1800px) {
   img {
-    width: 888px;
-    height: 480px;
+    max-width: 888px;
+    max-height: 480px;
   }
 }
 </style>

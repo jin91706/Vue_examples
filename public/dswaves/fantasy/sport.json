@@ -1,0 +1,205 @@
+{
+  "topSection": {
+      "company": "Fantasy",
+      "title": "Sport Series",
+      "sub_title": "Free your spirit with mini-vacations right outside your back door.",
+      "primary_iamge": "/img/fantasy/sport/sport_top.png",
+      "bg_button_color": "#FF9501",
+      "top_paragraph_content": "Turn your backyard into an outdoor retreat, nestled amongst the pines in the crisp mountain air, or an all-inclusive beach vacation, or a far away city. It’s your Fantasy, you choose.",
+      "view_reviews_color": "#16BFBF"
+  },
+  "gallerySection": {
+    "large": [
+      {
+          "image":"/img/fantasy/sport/1600x700-fantasy-sport-gallery-entice-taupe-two-women.jpg",
+          "caption": "Set the ambiance with multi-color underwater lights."
+      },
+      {
+          "image":"/img/fantasy/sport/1600x700-fantasy-sport-gallery-embrace-taupe-woman-control-panel.jpg",
+          "caption": "Change the temperature or turn the jets on with the touch of the digital control panel"
+      },
+      { 
+          "image": "/img/fantasy/sport/1600x700-fantasy-sport-gallery-drift-taupe-control-panel.jpg",
+          "caption": "Fantasy Spas offer a journey to relaxation with every soak!"
+      },
+      {
+          "image":"/img/fantasy/sport/1600x700-fantasy-sport-gallery-splendor-sand-closeup-boy.jpg",
+          "caption": "Each Fantasy Spas hot tub features full foam insulation for maximum heat retention and energy efficiency. Go ahead and soak any day of the year!"
+      },
+      {
+          "image":"/img/fantasy/sport/1600x700-fantasy-sport-gallery-entice-cool-step-family.jpg",
+          "caption": "Hot tubbing is a family affair. It'll become your favorite spot in the house - to bring everyone together or just to slip away for some \"me time.\""
+      }
+    ],
+    "thumb": [
+      "/img/fantasy/sport/1600x700-fantasy-sport-gallery-entice-taupe-two-women.jpg",
+      "/img/fantasy/sport/1600x700-fantasy-sport-gallery-embrace-taupe-woman-control-panel.jpg",
+      "/img/fantasy/sport/1600x700-fantasy-sport-gallery-drift-taupe-control-panel.jpg",
+      "/img/fantasy/sport/1600x700-fantasy-sport-gallery-splendor-sand-closeup-boy.jpg",
+      "/img/fantasy/sport/1600x700-fantasy-sport-gallery-entice-cool-step-family.jpg"
+    ],
+    "primary_color": "#16BFBF"
+  },
+  "viewModelsSection": { 
+    "settings" : {
+      "links": "#16BFBF"
+    },
+    "products": [{
+          "name": "Entice<span>&#174;</span>",
+          "seats": "5 Seats Spa",
+          "jets": "27 Jets",
+          "dimensions": "7'2\" x 6'5\" x 33\"",
+          "image": "/img/fantasy/sport/models/entice.png"
+        },
+        {
+          "name": "Splendor<span>&#174;</span>",
+          "seats": "5 Seats Spa",
+          "jets": "18 Jets",
+          "dimensions": "6'6\" x 6'6\" x 34\"",
+          "image": "/img/fantasy/sport/models/splendor.png"
+        },
+        {
+          "name": "Enamor<span>&#174;</span>",
+          "seats": "4 Seats Spa",
+          "jets": "19 Jets",
+          "dimensions": "6'9\" x 5'3\" x 33\"",
+          "image": "/img/fantasy/sport/models/enamor.png"
+        },
+        {
+          "name": "Drift<span>&#174;</span>",
+          "seats": "4 Seats Spa",
+          "jets": "17 Jets",
+          "dimensions": "5'8\" x 5'3\" x 32\"",
+          "image": "/img/fantasy/sport/models/drift.png"
+        },
+        {
+          "name": "Embrace<span>&#174;</span>",
+          "seats": "3 Seats Spa",
+          "jets": "17 Jets",
+          "dimensions": "5'10\" x 5'10\" x 31\"",
+          "image": "/img/fantasy/sport/models/embrace.png"
+        },
+        {
+          "name": "Aspire<span>&#174;</span>",
+          "seats": "2 Seats Spa",
+          "jets": "10 Jets",
+          "dimensions": "6' x 3'11\" x 28\"",
+          "image": "/img/fantasy/sport/models/aspire.png"
+        }
+      ]
+    },
+  "featureSection": {
+    "bg_button_color": "#ffffff",
+    "border_button_color": "3px solid #FF9501",
+    "button_color": "#FF9501",
+    "active_bg_button_color": "#FF9501",
+    "active_border_button_color": "3px solid #FF9501",
+    "active_button_color": "#ffffff" ,
+    "items": [
+      {
+        "button": "Portable",
+        "title": "",
+        "sub_title": "Unibody, lightweight shell so you don’t even need 10 people to help you carry it on your next camping trip to Mt. Everest.",
+        "primary_iamge": "/img/fantasy/premier/features/FantPortFEAT-v2.jpeg"
+      },
+      {
+        "button": "Plug N Play",
+        "title": "",
+        "sub_title": "Outlets can run, but they can’t hide! Find an outlet, plug it in, and fire up your Fantasy spa lickity split.",
+        "primary_iamge": "/img/fantasy/premier/features/FantPlugFEAT.jpeg"
+      },
+      {
+        "button": "Energy",
+        "title": "",
+        "sub_title": "Keep the temperature high, and the electric bill low with full foam insulation and a locking thermal cover.",
+        "primary_iamge": "/img/fantasy/premier/features/FantEnergyFEAT.jpeg"
+      }
+    ]
+  },
+  "reviewSection": { 
+    "large": [
+      {
+        "image":"/img/fantasy/sport/reviews/800x500-fantasy-sport-review-1.jpg",
+        "primary_color": "#FF9501",
+        "title": "The delivery people were great.",
+        "desc": "I purchased the Aspire Fantasy hot tub in May 2016 from Pioneer Pools in Brantford Ontario. The delivery people were great. I had the spa placed in my gazebo and hardwired in. This hot tub takes only a half hour to fill and four hours to heat. The jets are powerful; the tray is very handy and the seating arrangements are well thought out and non constricting. There is more than enough room for two people in this luxurious little spa. I chose this one over the Drift because you can just lay back and relax with room to spare.The LED lighting is just magical and the cost... using two to three times per day is only $25. Can. Per month. Also the Sahara Sand color actually has the look and texture of real sand. I just love this Fantasy Spa!",
+        "reviewer_name": "Marilyn",
+        "reviewer_location": ""
+      },
+      {
+        "image":"/img/fantasy/sport/reviews/800x500-fantasy-sport-review-2.jpg",
+        "primary_color": "#FF9501",
+        "title": "So glad I made the purchase.",
+        "desc": "My spa is the greatest. It is so easy to maintain. It's fun, relaxing and excellent on the electric bill. So glad I made the purchase.",
+        "reviewer_name": "Joyce LIndsay",
+        "reviewer_location": ""
+      },
+      {
+        "image":"/img/fantasy/sport/reviews/800x500-fantasy-sport-review-3.jpg",
+        "primary_color": "#FF9501",
+        "title": "I would highly recommend it.",
+        "desc": "We have owned ours for almost one year, so far it has been enjoyable, cost effective, easy to maintain, easy to operate and very reliable. I would highly recommend it.",
+        "reviewer_name": "Randy",
+        "reviewer_location": ""
+      }
+    ],
+    "primary_color": "#FF9501",
+    "secondary_color": "#16BFBF"
+  },
+  "bottomSection": [
+    {
+      "title": "Shop Other Hot Tub Collections",
+      "sub_title": "With three different hot tub Collections there's one that fits your lifestyle.",
+      "link_color": "#16BFBF",
+      "primary_images": [
+        { 
+          "src":"/img/fantasy/sport/sport_bottom.png" ,
+          "link_location":"http://google.com",
+          "link_text":"Premier Series",
+          "desc":"Hot tubbing with a touch of elegance"
+        }
+      ]
+    }
+  ],
+  "collectionFeatureSection": {
+    "settings" : {
+      "links": "#293B96"
+    },
+    "products": [
+      {
+        "name": "FRESHWATER<span>&#174;</span> SALT SYSTEM READY",
+        "desc": "A revolution in worry-free water care that helps you spend more time enjoying your spa and less time maintaining it.",
+        "image": "/img/hl_collection/HSHLCFSS.png"
+      },
+      {
+        "name": "WIRELESS REMOTE CONTROL",
+        "desc": "Operate spa functions from anywhere in the spa and up to 30 feet away with this unique, easy-to-read color touchscreen.",
+        "image": "/img/hl_collection/HSSHCP.png"
+      },
+      {
+        "name": "MOTO-MASSAGE<span>&#174;</span> DX JET",
+        "desc": "Patented moving jets provide two powerful water streams that sweep up and down your back for a massage like no other.",
+        "image": "/img/hl_collection/HMMDXJ.png"
+      },
+      {
+        "name": "SUPER ENERGY EFFICIENT AND ENERGY SMART<span>&#174;</span>",
+        "desc": "High-density, full-foam insulation is the same found in commercial freezers. With the comprehensive Energy Smart system of innovations, these are our most energy-efficient hot tubs.",
+        "image": "/img/hl_collection/HSHLSEE.png"
+      },
+      {
+        "name": "100% NO-BYPASS FILTRATION AND TRI-X<span>&#174;</span>",
+        "desc": "All the water is filtered all the time and dishwasher-safe Tri-X filters help keep water crystal clear.",
+        "image": "/img/hl_collection/HSNBF.png"
+      },
+      {
+        "name": "POLYMER STRUCTURE AND BASE PAN",
+        "desc": "Built for durability and long life with a structure that will never rust or rot.",
+        "image": "/img/hl_collection/HSSHPS.png"
+      }
+    ]
+  },
+  "utopiaSection": {
+    "primary_image": "/img/utopia/CSUF.png",
+    "accordion_color": "#293B96"
+  }
+}

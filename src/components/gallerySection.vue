@@ -42,7 +42,7 @@ export default {
         buttons[i].style.background="url('" + this.gallery.thumb[i] + "')";
       }
     }
-    document.documentElement.style.setProperty('--carousel-color-primary', '' + this.gallery.primary_color + '');
+    document.documentElement.style.setProperty('--pagnation-border-color', '' + this.gallery.primary_color + '');
   },
   computed: {
   },
@@ -76,7 +76,7 @@ export default {
   object-fit: cover;
 }
 .dsw-gallery .carousel__pagination-button--active {
-  border: 3px solid var(--carousel-color-primary) !important;
+  border: 3px solid var(--pagnation-border-color) !important;
 }
 .dsw-gallery.dsw-container {
   margin: 0 auto;
